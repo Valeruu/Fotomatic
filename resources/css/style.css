@@ -80,7 +80,7 @@ header .desktop {
 header .icon {
   width: 1rem;
   padding-left: .75rem;
-  border: 2px dotted pink;
+  margin-right: 30px;
 }
 
 header .mobile {
@@ -250,17 +250,22 @@ header .mobile {
   margin: 0px 1.25rem;
   background-color: white;
   height: 635px;
-  width: 40%;s7
+  width: 40%;
 }
 
-.feature img {
-  width: 90%;
+.feature .center {
+  height: 635px;
+}
+
+.feature .image-container {
+  width: 100%;
   height: 65%;
-  margin: 0 auto;
 }
 
-.feature .content {
-  height: 187px;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
 }
 
 .feature h2 {
@@ -276,6 +281,10 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+}
+
+.feature .content {
+  height: 187px;
 }
 
 @media only screen and (max-width: 890px) {
@@ -319,6 +328,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  margin-top: 64px;
 }
 
 #filters-section .content h3 {
@@ -331,6 +341,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -369,11 +380,13 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+
+
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -382,7 +395,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
@@ -408,6 +421,7 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  height: 62px;
 }
 
 footer .content {
@@ -418,6 +432,7 @@ footer .content {
 
 footer .copyright {
   flex-grow: 1;
+  align-items: center;
 }
 
 @media only screen and (min-width: 760px) {
