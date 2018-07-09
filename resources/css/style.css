@@ -87,36 +87,55 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
-  header .desktop {
+@media only screen and (min-width: 1024px) {
+  .content .mobile {
     display: none;
   }
 
-  header .mobile {
-    display: block;
-    width: 100%;
+  .content .tablet {
+    display: none;
+  }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 760px){
+  .content .desktop {
+    display: none;
+  }
+
+  .content .mobile {
+    display: none;
+  }
+
+  .content .tablet {
+    display: flex;
+    justify-content: flex-end;
   }
 
   header .content {
     padding: .5rem 0;
   }
 
-  header .mobile ul {
+  header .tablet ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin-left: 20rem;
   }
 
-  header .mobile li {
-    padding: 0;
-  }
-
-  header .mobile .button {
+  header .tablet .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+  }
+
+  #features-section .content h2 {
+    text-align: left;
+  }
+
+  #features-section .content h3 {
+    text-align: left;
   }
 }
 
@@ -187,6 +206,20 @@ header .mobile {
   width: 408px;
   font-size: 20px;
   border-top: 4px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+  #sign-up-cta {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    margin: auto;
+  }
+  #sign-up-cta .email {
+    display: none;
+  }
+
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -312,6 +345,7 @@ header .mobile {
   }
 }
 
+
 /* Filters Section */
 
 #filters-section {
@@ -343,6 +377,13 @@ header .mobile {
   padding: 0 1%;
   display: flex;
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 760px){
+  #filters-section .content h2 {
+    margin-top: 0px;
+  }
+}
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -384,8 +425,6 @@ header .mobile {
   padding: 5rem 0;
 }
 
-
-
 #quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
@@ -413,6 +452,23 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 760px) {
+  #quotes-section {
+    display: flex
+  }
+  #quotes-section div {
+    display: flex;
+    flex-direction: row;
+  }
+  #quotes-section span {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  #quotes-section img {
+    margin-right: 2rem;
   }
 }
 
